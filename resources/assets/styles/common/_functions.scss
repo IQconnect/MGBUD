@@ -1,0 +1,11 @@
+@function color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+@function font($key: "main") {
+  @return map-get($font-family, $key);
+}
+
+@function z-index($key) {
+  @return map-get($z-index, $key);
+}

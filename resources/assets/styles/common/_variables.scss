@@ -1,0 +1,40 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  light: #fff,
+  dark: #000,
+  primary: #455a63,
+  secondary: #2a373d,
+  lightgrey: #f6f5f1,
+  grey: #454545,
+  special: #d21429
+);
+
+$media: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  xl: 1440px
+);
+
+$transition: 0.4s;
+
+$font-family: (
+  main: "Montserrat",
+  stitle: "Segoe UI"
+);
+
+$gutter: 8px;
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$z-index: (
+  infobar: 200,
+  header: 100,
+  preloader: 300,
+  popup: 250
+);
