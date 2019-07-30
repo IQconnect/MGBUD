@@ -1,14 +1,13 @@
 import { storiesOf } from "@storybook/html";
 
 import "../../resources/assets/styles/main.scss";
-import slaid from "../../resources/assets/images/slaid1.png";
+import asd from "../../resources/assets/images/s1.png";
 
 const slaider = `
 <section class="hero">
 <div class="container">
-<div class="carousel-cell>
-	<img src="${slaid}" alt="">
-	</div>
+
+	<img src="${asd}" alt="">
 </div>
 </section>
 `;
