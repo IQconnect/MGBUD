@@ -1,0 +1,49 @@
+.text-img {
+  position: relative;
+
+  &__content {
+    padding: ($gutter * 8) 0;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__imagebox {
+    display: none;
+
+    @include media("lg") {
+      width: 40%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__checktext {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding: ($gutter * 5) 0 0 0;
+    list-style-type: none;
+    list-style-position: inside;
+
+    li {
+      display: flex;
+      padding: $gutter * 1 0;
+    }
+  }
+  &__icon {
+    width: 2%;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  &__desc {
+    width: 100%;
+    padding: 0 ($gutter * 4) 0 ($gutter * 12);
+    @include media("lg") {
+      width: 48%;
+    }
+  }
+}

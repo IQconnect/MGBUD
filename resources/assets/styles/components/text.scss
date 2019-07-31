@@ -18,7 +18,7 @@
 .title {
   @include cssLock("font-size", 360, 1920, (18, 45));
 
-  color: color(secondary);
+  color: color(primary);
   font-family: font(main);
   font-weight: 800;
 
@@ -32,6 +32,7 @@
 .subtitle {
   @include cssLock("font-size", 360, 1920, (12, 18));
 
+  color: color(primary);
   font-family: font(main);
   font-weight: 600;
 
@@ -59,7 +60,7 @@
 
   font-family: font(main);
   font-weight: 400;
-
+  line-height: $gutter * 4;
   @extend %text;
 
   &--light {
@@ -67,7 +68,7 @@
   }
 
   &--grey {
-    color: color("grey");
+    color: color(grey);
   }
 
   &--thin {
@@ -98,6 +99,9 @@
   color: color(light);
   @extend %text;
 
+  &--dark {
+    color: color(primary);
+  }
   &--bold {
     font-weight: 800;
   }
