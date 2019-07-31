@@ -1,0 +1,38 @@
+.offer {
+  position: relative;
+
+  &__content {
+    padding: ($gutter * 8) 0;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 180px;
+    background-color: color(lightgrey);
+    list-style-type: none;
+    list-style-position: inside;
+
+    li {
+      border-radius: 0 28px 0 0;
+      margin: 0;
+      padding: $gutter * 3;
+      display: flex;
+      align-items: center;
+      background-color: color(lightgrey);
+
+      &:hover {
+        background-color: color(primary);
+
+        span {
+          color: color(light);
+        }
+      }
+    }
+  }
+}
