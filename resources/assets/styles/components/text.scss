@@ -90,6 +90,10 @@
   font-weight: 600;
 
   @extend %text;
+
+  &--primary {
+    color: color(primary);
+  }
 }
 
 .small-text {

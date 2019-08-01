@@ -41,9 +41,14 @@
 
   &__desc {
     width: 100%;
-    padding: 0 ($gutter * 4) 0 ($gutter * 12);
     @include media("lg") {
       width: 48%;
+    }
+    &--left {
+      margin: 0 0 0 65px;
+    }
+    &--right {
+      margin: 0 65px 0 0;
     }
   }
 }

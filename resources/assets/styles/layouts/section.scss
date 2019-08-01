@@ -9,6 +9,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+  &--bgrey {
+    background-color: color(lightgrey);
+  }
 
   &__header {
     margin-bottom: $gutter * 6;

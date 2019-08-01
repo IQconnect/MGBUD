@@ -10,7 +10,7 @@ const textimg = `
 		<div class="text-img__imagebox">
 			<img src="${img}" alt="">
 		</div>
-		<div class="text-img__desc">
+		<div class="text-img__desc text-img__desc--left">
 			<header class="section__header">
 				<h2 class="section-header">
 					<span class="section-header__sub--left subtitle">O firmie</span>
