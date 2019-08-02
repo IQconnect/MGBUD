@@ -22,10 +22,18 @@
     flex-direction: column;
     display: flex;
     flex-wrap: wrap;
-    padding: ($gutter * 5) 0 0 0;
     list-style-type: none;
     list-style-position: inside;
+    padding: ($gutter * 5) 0 0 0;
 
+    @include media("lg") {
+      flex-direction: column;
+      display: flex;
+      flex-wrap: wrap;
+      padding: ($gutter * 5) 0 0 0;
+      list-style-type: none;
+      list-style-position: inside;
+    }
     li {
       display: flex;
       padding: $gutter * 1 0;
