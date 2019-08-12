@@ -4,7 +4,7 @@ import "../../resources/assets/styles/main.scss";
 import img from "../../resources/assets/images/offer1.png";
 
 const offer = `
-<section class="section section--bgrey offer">
+<section class="offer">
 	<div class="offer__container container">
 		<header class="section__header">
 			<h2 class="section-header">

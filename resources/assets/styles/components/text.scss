@@ -9,8 +9,7 @@
   @extend %text;
   @include cssLock("font-size", 360, 1920, (24, 70));
   font-weight: 700;
-  line-height: 1.1;
-  text-align: left;
+  //line-height: 1.1;
 }
 
 .title {
@@ -28,7 +27,6 @@
 .text {
   @extend %text;
   @include cssLock("font-size", 360, 1920, (12, 16));
-  // line-height: $gutter * 4;
 }
 
 .large-text {
