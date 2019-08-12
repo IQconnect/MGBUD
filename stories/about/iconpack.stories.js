@@ -7,11 +7,11 @@ const iconpack = `
 <section class="section iconspack">
 	<div class="iconpack container">
 	<ul class="iconpack__row small-text small-text--bold small-text--dark">
-	<li><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
-	<li><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
-	<li><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
-	<li><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
-	<li><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
 	</div>
 </section>
 `;

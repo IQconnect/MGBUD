@@ -28,19 +28,26 @@
 @import "common/global";
 
 /** Components */
-
+@import "components/text";
+@import "components/button";
+@import "components/singleofert";
 @import "components/container";
 @import "components/list";
-@import "components/text";
+@import "components/hamburger";
+@import "components/page-box";
+@import "components/iconlist";
+@import "components/img";
 
 /** Blocks */
 @import "blocks/section-header";
+@import "blocks/content-header";
+@import "blocks/features";
 @import "blocks/iconpack";
 @import "blocks/offer";
+@import "blocks/text-img";
 /** Layouts */
 
 @import "layouts/header";
-@import "layouts/text-img";
 @import "layouts/section";
 
 /** PAges */

@@ -11,33 +11,6 @@
     list-style-type: none;
     list-style-position: inside;
 
-    li {
-      @include cssLock("padding", 360, 1920, ($_gutter * 2, $_gutter * 4));
-
-      @include media("lg") {
-        justify-self: auto;
-      }
-      display: flex;
-      text-align: center;
-      flex-direction: column;
-      align-items: center;
-      background-color: color(lightgrey);
-      justify-self: center;
-      border-radius: 0 ($gutter * 3.5) 0 0;
-
-      &:hover {
-        background-color: color(primary);
-
-        span {
-          color: color(light);
-        }
-
-        img {
-          filter: brightness(0) invert(1);
-        }
-      }
-    }
-
     span {
       margin-top: $gutter * 1;
     }
@@ -50,6 +23,34 @@
       @include media("lg") {
         display: flex;
         width: $gutter * 12;
+      }
+    }
+  }
+  &__ele {
+    @include cssLock("padding", 360, 1920, ($_gutter * 2, $_gutter * 4));
+
+    @include media("lg") {
+      justify-self: auto;
+    }
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: color(lightgrey);
+    justify-self: center;
+    border-radius: 0 ($gutter * 3.5) 0 0;
+
+    &:hover {
+      background-color: color(primary);
+      transition: all 0.3s ease;
+
+      span {
+        color: color(light);
+        transition: all 0.3s ease;
+      }
+
+      img {
+        filter: brightness(0) invert(1);
       }
     }
   }

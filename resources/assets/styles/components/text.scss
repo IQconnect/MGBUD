@@ -1,116 +1,43 @@
 %text {
   margin: 0;
   padding: 0;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: font(main);
 }
 
 .headline {
+  @extend %text;
   @include cssLock("font-size", 360, 1920, (24, 70));
-
-  color: color(light);
-  font-family: font(main);
   font-weight: 700;
   line-height: 1.1;
   text-align: left;
-  @extend %text;
 }
 
 .title {
-  @include cssLock("font-size", 360, 1920, (18, 45));
-
-  color: color(primary);
-  font-family: font(main);
-  font-weight: 800;
-
   @extend %text;
-
-  &--light {
-    color: map-get($theme-colors, light);
-  }
+  @include cssLock("font-size", 360, 1920, (18, 45));
+  font-weight: 800;
 }
 
 .subtitle {
-  @include cssLock("font-size", 360, 1920, (12, 18));
-
-  color: color(primary);
-  font-family: font(main);
-  font-weight: 600;
-
   @extend %text;
-
-  &--light {
-    color: color(light);
-  }
-
-  &--dark {
-    color: color(secondary);
-  }
-
-  &--center {
-    text-align: center;
-  }
-
-  &--left {
-    text-align: left;
-  }
+  @include cssLock("font-size", 360, 1920, (12, 18));
+  font-weight: 600;
 }
 
 .text {
-  @include cssLock("font-size", 360, 1920, (12, 16));
-
-  font-family: font(main);
-  font-weight: 400;
-  line-height: $gutter * 4;
   @extend %text;
-
-  &--light {
-    color: color(light);
-  }
-
-  &--grey {
-    color: color(grey);
-  }
-
-  &--thin {
-    font-weight: 300;
-  }
-
-  &--left {
-    text-align: left;
-  }
-
-  &--center {
-    text-align: center;
-  }
+  @include cssLock("font-size", 360, 1920, (12, 16));
+  // line-height: $gutter * 4;
 }
 
 .large-text {
-  @include cssLock("font-size", 360, 1920, (16, 30));
-  font-family: font(main);
-  font-weight: 600;
-
   @extend %text;
-
-  &--primary {
-    color: color(primary);
-  }
+  @include cssLock("font-size", 360, 1920, (16, 30));
+  font-weight: 600;
 }
 
 .small-text {
-  @include cssLock("font-size", 360, 1920, (10, 12));
-
-  font-family: font(main);
-  color: color(light);
   @extend %text;
-
-  &--dark {
-    color: color(primary);
-  }
-  &--bold {
-    font-weight: 800;
-  }
-
-  &--light {
-    font-weight: 300;
-  }
+  @include cssLock("font-size", 360, 1920, (10, 12));
 }

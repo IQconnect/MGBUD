@@ -1,0 +1,25 @@
+.content-header {
+  color: color(primary);
+  text-align: center;
+
+  &__title {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+  &__tleft {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-bottom: ($gutter * 5);
+  }
+
+  &__sub {
+    display: block;
+  }
+  &__sleft {
+    position: relative;
+    display: block;
+    text-align: left;
+  }
+}

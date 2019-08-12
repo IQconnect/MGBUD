@@ -1,0 +1,25 @@
+.single-ofert {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  background-color: color(lightgrey);
+
+  &__img {
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    margin: 0;
+  }
+
+  &__desc {
+    padding: ($gutter * 7);
+  }
+
+  &__title {
+    margin-bottom: ($gutter * 2);
+  }
+
+  &__button {
+    align-self: self-start;
+  }
+}

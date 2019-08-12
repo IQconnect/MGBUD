@@ -5,16 +5,7 @@
   list-style-type: none;
   //padding: 0;
 
-  &__elem {
-    padding: $gutter * 2.5 $gutter * 3.5;
-    background-color: color(secondary);
-    transition: 0.4s;
-    &--round {
-      border-radius: $gutter * 3.5 0 0 0;
-    }
-    &:hover {
-      background-color: color(light);
-      color: color(secondary);
-    }
+  &--round {
+    border-radius: $gutter * 3.5 0 0 0;
   }
 }

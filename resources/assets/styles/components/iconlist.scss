@@ -1,0 +1,31 @@
+.iconlist {
+  display: flex;
+  flex-direction: column;
+  list-style-position: inside;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__elem {
+    @extend .text;
+    margin-bottom: ($gutter * 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: "";
+      width: ($gutter * 1);
+      height: ($gutter * 1);
+      padding: ($gutter * 0.1);
+      background-color: color(special);
+      border-radius: 100%;
+      margin-right: ($gutter * 6);
+      color: color(special);
+    }
+  }
+}

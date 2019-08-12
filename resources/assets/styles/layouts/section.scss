@@ -1,6 +1,6 @@
 .section {
   padding: $gutter * 15 0;
-
+  overflow: hidden;
   @media (max-width: 998px) {
     padding: $gutter * 8 0;
   }
@@ -8,9 +8,6 @@
   &--full {
     padding-left: 0;
     padding-right: 0;
-  }
-  &--bgrey {
-    background-color: color(lightgrey);
   }
 
   &__header {

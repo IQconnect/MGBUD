@@ -1,0 +1,16 @@
+.button {
+  @extend .text;
+  color: color(light);
+  padding: ($gutter * 4) ($gutter * 5);
+  margin-top: ($gutter * 5);
+  text-decoration: none;
+  display: inline-block;
+
+  &--buttonbg {
+    background: color(primary);
+    &:hover {
+      background: darken(color(primary), 8%);
+      transition: all 0.3s ease;
+    }
+  }
+}

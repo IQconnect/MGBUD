@@ -1,26 +1,21 @@
 .section-header {
-  color: color(primary);
   text-align: center;
 
+  &--left {
+    text-align: left;
+    display: block;
+    margin-left: auto;
+  }
+
   &__title {
-    text-align: center;
+    @extend .title;
     margin: auto;
     display: block;
-
-    &--left {
-      text-align: left;
-      display: block;
-      margin-left: auto;
-    }
   }
 
   &__sub {
+    @extend .subtitle;
     display: block;
-
-    &--left {
-      position: relative;
-      display: block;
-      text-align: left;
-    }
+    margin-bottom: ($gutter * 2);
   }
 }

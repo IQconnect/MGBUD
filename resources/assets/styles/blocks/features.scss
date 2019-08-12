@@ -1,0 +1,28 @@
+.features {
+  @extend .section;
+  background-color: color(secondary);
+
+  position: relative;
+  &__wrapper {
+    display: flex;
+    z-index: 1;
+    position: relative;
+  }
+  &__title {
+    color: color(light);
+    display: flex;
+    margin-left: ($gutter * 25);
+    margin-bottom: ($gutter * 8);
+    width: 40%;
+    align-items: center;
+  }
+  &__bg {
+    margin: 0;
+    padding: 20% 33%;
+    position: absolute;
+    z-index: 0;
+    left: 33%;
+    top: 0;
+    opacity: 0.5;
+  }
+}
