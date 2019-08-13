@@ -4,14 +4,24 @@ import "../../resources/assets/styles/main.scss";
 import house from "../../resources/assets/images/svg/house_icon.svg";
 
 const iconpack = `
-<section class="section iconspack">
-	<div class="iconpack container">
-	<ul class="iconpack__row small-text small-text--bold small-text--dark">
-	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
-	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
-	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
-	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
-	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt=""><span>Lorem ipsum dolor</span></li>
+<section class="iconspack">
+	<div class="container">
+	<ul class="iconpack__wrapper">
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt="">
+	<span class="iconpack__desc">Lorem ipsum dolor</span>
+	</li>
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt="">
+	<span class="iconpack__desc">Lorem ipsum dolor</span>
+	</li>
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt="">
+	<span class="iconpack__desc">Lorem ipsum dolor</span>
+	</li>
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt="">
+	<span class="iconpack__desc">Lorem ipsum dolor</span>
+	</li>
+	<li class="iconpack__ele"><img class="iconpack__icons" src="${house}" alt="">
+	<span class="iconpack__desc">Lorem ipsum dolor</span>
+	</li>
 	</div>
 </section>
 `;

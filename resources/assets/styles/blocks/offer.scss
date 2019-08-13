@@ -3,7 +3,7 @@
   background-color: color(lightgrey);
   position: relative;
 
-  &__content {
+  &__wrapper {
     padding: ($gutter * 8) 0;
     display: flex;
     flex-wrap: wrap;

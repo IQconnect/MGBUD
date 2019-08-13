@@ -1,5 +1,7 @@
 .iconpack {
-  &__row {
+  @extend .section;
+
+  &__wrapper {
     @include cssLock("grid-gap", 360, 1920, ($_gutter * 1, $_gutter * 2));
 
     @include media("md") {
@@ -11,10 +13,6 @@
     list-style-type: none;
     list-style-position: inside;
 
-    span {
-      margin-top: $gutter * 1;
-    }
-
     img {
       @include cssLock("width", 360, 1920, ($_gutter * 4, $_gutter * 16));
 
@@ -25,6 +23,12 @@
         width: $gutter * 12;
       }
     }
+  }
+  &__desc {
+    @extend .small-text;
+    color: color(primary);
+    margin-top: $gutter * 1;
+    font-weight: 800;
   }
   &__ele {
     @include cssLock("padding", 360, 1920, ($_gutter * 2, $_gutter * 4));
