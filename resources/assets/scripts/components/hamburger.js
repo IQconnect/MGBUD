@@ -1,7 +1,7 @@
 const CONFIG = {
-  TRIGGER: "[data-toggle-menu]",
-  ELEM: "[data-nav]",
-  CLASS: "-is-active"
+  TRIGGER: '[data-toggle-menu]',
+  ELEM: '[data-nav]',
+  CLASS: '-is-active',
 };
 
 const toggleMenu = {
@@ -14,7 +14,7 @@ const toggleMenu = {
 
   addEvent() {
     const { CLASS } = CONFIG;
-    this.$trigger.addEventListener("click", event => {
+    this.$trigger.addEventListener('click', event => {
       const $this = event.currentTarget;
       $this.classList.toggle(CLASS);
       this.toggleElem(CLASS);
@@ -23,7 +23,7 @@ const toggleMenu = {
 
   toggleElem(CLASS) {
     this.$elem.classList.toggle(CLASS);
-  }
+  },
 };
 
 export default toggleMenu;

@@ -20,7 +20,7 @@ const header = `
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
           </button>
-          <nav data-nav>
+          <nav class="header__nav" data-nav>
             <ul class="list">
               <li class="header__nav--ele list--round"">
                 <a href="" alt="">STRONA GŁÓWNA</a>

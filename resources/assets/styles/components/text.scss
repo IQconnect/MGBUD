@@ -9,7 +9,6 @@
   @extend %text;
   @include cssLock("font-size", 360, 1920, (24, 70));
   font-weight: 700;
-  //line-height: 1.1;
 }
 
 .title {

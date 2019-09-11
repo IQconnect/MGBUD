@@ -1,3 +1,11 @@
-.realization{
-	
+.realization {
+  @extend .section;
+
+  &__wrapper {
+    display: flex;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
 }

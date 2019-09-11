@@ -5,13 +5,15 @@
 
   &__wrapper {
     padding: ($gutter * 8) 0;
-    display: flex;
-    flex-wrap: wrap;
     z-index: 10;
     position: relative;
   }
 
   &__menu {
+    @extend .text;
+
+    color: color(primary);
+    font-weight: 600;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,9 +44,12 @@
       }
     }
   }
-  &__box {
+  &__singlebox {
     margin: $gutter * 6 0px;
     display: flex;
     justify-content: space-between;
+  }
+  &__textbox {
+    width: 55%;
   }
 }

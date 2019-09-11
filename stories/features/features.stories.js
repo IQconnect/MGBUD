@@ -20,10 +20,10 @@ const features = `
 						<li class="iconlist__elem">Lorem ipsum dolor</li>
 					</ul>
 				</div>
-			<header class="features__title">
-				<h2 class="section-header section-header--left">
+			<header class="section-header section-header--left features__title">
+				<h2 class="section-header__title">
 					<span class="section-header__sub ">NASZE CECHY</span>
-					<span class="section-header__title">DLACZEGO WARTO NAM ZAUFAĆ</span>
+					DLACZEGO WARTO NAM ZAUFAĆ
 				</h2>
 			</header>
 		</div>

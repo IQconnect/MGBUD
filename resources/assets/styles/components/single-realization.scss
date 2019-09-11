@@ -1,6 +1,6 @@
-.single-ofert {
+.single-realization {
   display: flex;
-  width: 30%;
+  width: 48%;
   flex-direction: column;
   background-color: color(lightgrey);
 
@@ -11,8 +11,15 @@
     margin: 0;
   }
 
+  &__textbox {
+    padding: ($gutter * 6);
+    &--primary {
+      color: color(primary);
+    }
+  }
   &__desc {
-    padding: ($gutter * 7);
+    @extend .text;
+    color: color(grey);
   }
 
   &__title {

@@ -1,25 +1,18 @@
 .content-header {
+  @extend .large-text;
+
   color: color(primary);
   text-align: center;
 
-  &__title {
+  &__center {
     text-align: center;
     margin: auto;
     display: block;
   }
-  &__tleft {
+  &__left {
+    margin: 0;
     text-align: left;
     display: block;
-    margin-left: auto;
-    margin-bottom: ($gutter * 5);
-  }
-
-  &__sub {
-    display: block;
-  }
-  &__sleft {
-    position: relative;
-    display: block;
-    text-align: left;
+    margin-bottom: ($gutter * 3);
   }
 }

@@ -21,7 +21,6 @@
   &__textbox {
     width: 100%;
     justify-self: flex-end;
-    margin-left: ($gutter * 2);
 
     @include media("lg") {
       width: 48%;
@@ -49,9 +48,15 @@
       font-weight: 300;
       padding: 0;
     }
-    li {
+    &--ele {
       display: flex;
       padding: ($gutter * 1) 0;
+      align-items: center;
+
+      &::before {
+        content: url("../images/svg/check_icon.svg");
+        margin-right: ($gutter * 2);
+      }
     }
   }
   &__icon {

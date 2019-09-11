@@ -1,6 +1,11 @@
 .section-header {
-  text-align: center;
-  margin-bottom: $gutter * 6;
+  &--center {
+    text-align: center;
+  }
+
+  &--addmargin {
+    margin-bottom: ($gutter * 4);
+  }
 
   &--left {
     text-align: left;
@@ -13,6 +18,11 @@
   }
   &--primary {
     color: color(primary);
+  }
+
+  &__headline {
+    @extend .headline;
+    display: block;
   }
 
   &__title {

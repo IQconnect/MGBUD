@@ -28,9 +28,10 @@
 @import "common/global";
 
 /** Components */
+
 @import "components/text";
 @import "components/button";
-@import "components/singleofert";
+@import "components/single-realization";
 @import "components/container";
 @import "components/list";
 @import "components/hamburger";
@@ -39,12 +40,16 @@
 @import "components/img";
 
 /** Blocks */
+
 @import "blocks/section-header";
 @import "blocks/content-header";
 @import "blocks/features";
+@import "blocks/realization";
 @import "blocks/iconpack";
 @import "blocks/offer";
 @import "blocks/text-img";
+@import "blocks/call";
+
 /** Layouts */
 
 @import "layouts/header";
