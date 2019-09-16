@@ -29,8 +29,7 @@
 
 /** Components */
 
-@import "components/text";
-@import "components/button";
+@import "components/typography";
 @import "components/single-realization";
 @import "components/container";
 @import "components/list";
@@ -38,6 +37,8 @@
 @import "components/page-box";
 @import "components/iconlist";
 @import "components/img";
+@import "components/form";
+@import "components/button";
 
 /** Blocks */
 
@@ -49,6 +50,7 @@
 @import "blocks/offer";
 @import "blocks/text-img";
 @import "blocks/call";
+@import "blocks/send";
 
 /** Layouts */
 

@@ -1,0 +1,25 @@
+.send {
+  @extend .section;
+
+  background-color: color(secondary);
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    width: 70%;
+    display: flex;
+    
+  }
+
+  &__title {
+    color: color(light);
+    display: flex;
+  }
+}
