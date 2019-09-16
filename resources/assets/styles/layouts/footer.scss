@@ -1,0 +1,13 @@
+.footer {
+  @extend .section;
+
+  &__firm {
+    @extend .text;
+    background-color: color(primary);
+    color: color(light);
+
+    &--cookie {
+      @extend .special;
+    }
+  }
+}
