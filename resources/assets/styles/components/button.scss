@@ -1,5 +1,6 @@
 .button {
   @extend .text;
+
   font-weight: 600;
   color: color(light);
   padding: ($gutter * 4) ($gutter * 5);
