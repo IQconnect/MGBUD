@@ -9,7 +9,6 @@ import img4 from "../../resources/assets/images/line/Rectangle 145.png";
 
 const photoline = `
 <section class=" photoline">
-	<div class="container">
 		<div class=" photoline__box">
 		<figure class="photoline__img">
 			<img  class="img" src="${img}" alt="">
@@ -27,7 +26,6 @@ const photoline = `
 			<img  class="img" src="${img4}" alt="">
 		</figure>
 		</div>
-	</div>
 </section>
 `;
 
