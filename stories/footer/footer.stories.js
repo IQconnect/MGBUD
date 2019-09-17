@@ -30,11 +30,11 @@ const footer = `
             Nawigacja
             </h4>
             <ul class="footer__list">
-              <li class="footer__list--ele">STRONA GŁÓWNA</li>
-              <li class="footer__list--ele">O FIRMIE</li>
-              <li class="footer__list--ele">OFERTA</li>
-              <li class="footer__list--ele">REALIZACJE</li>
-              <li class="footer__list--ele">KONTAKT</li>
+              <li class="footer__list--ele footer__list--hover"><a href="">STRONA GŁÓWNA</a></li>
+              <li class="footer__list--ele footer__list--hover"><a href="">O FIRMIE</a></li>
+              <li class="footer__list--ele footer__list--hover"><a href="">OFERTA</a></li>
+              <li class="footer__list--ele footer__list--hover"><a href="">REALIZACJE</a></li>
+              <li class="footer__list--ele footer__list--hover"><a href="">KONTAKT</a></li>
             </ul>
           </div>
           <div class="footer__column">

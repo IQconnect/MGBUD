@@ -1,6 +1,7 @@
 .footer {
   @extend .section;
 
+  padding-top: ($gutter * 6);
   padding-bottom: 0;
 
   background-color: color(primary);
@@ -43,6 +44,11 @@
     }
     &--anchor {
       font-weight: 700;
+    }
+    &--hover {
+      :hover {
+        font-weight: 700;
+      }
     }
   }
 
