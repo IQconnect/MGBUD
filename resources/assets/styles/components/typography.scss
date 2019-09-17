@@ -14,13 +14,13 @@
 .title {
   @extend %text;
   @include cssLock("font-size", 360, 1920, (18, 45));
-  font-weight: 800;
+  //font-weight: 800;
 }
 
 .subtitle {
   @extend %text;
   @include cssLock("font-size", 360, 1920, (12, 18));
-  font-weight: 600;
+  //font-weight: 600;
 }
 
 .text {

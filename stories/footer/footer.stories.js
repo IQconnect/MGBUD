@@ -12,32 +12,38 @@ const footer = `
             O nas
             </h4>
             <ul class="footer__list">
-              <li class="footer__column--subtitle">MGBUD SP Z O.O.</li>
-              <li>Ul. Ks. J. Popiełuszki 26/28
-              10-693 Olsztyn
-              www.mgbud.pl
+              <li class="footer__list--subtitle">MGBUD SP Z O.O.</li>
+              <li class="footer__list--ele">Ul. Ks. J. Popiełuszki 26/28</br>
+              10-693 Olsztyn</br>
+              <a class="footer__list--anchor" href="">www.mgbud.pl</a>
               </li>
-              <li>Email
+              <li class="footer__list--ele">Email</br>
               biuro@mgbud.pl
               </li>
-              <li>Telefon
+              <li class="footer__list--ele">Telefon</br>
               +48 694 428 741
               </li>
             </ul>
           </div>
           <div class="footer__column">
-            <ul>Nawigacja
-              <li>STRONA GŁÓWNA</li>
-              <li>O FIRMIE</li>
-              <li>OFERTA</li>
-              <li>REALIZACJE</li>
-              <li>KONTAKT</li>
+          <h4 class="footer__column--title">
+            Nawigacja
+            </h4>
+            <ul class="footer__list">
+              <li class="footer__list--ele">STRONA GŁÓWNA</li>
+              <li class="footer__list--ele">O FIRMIE</li>
+              <li class="footer__list--ele">OFERTA</li>
+              <li class="footer__list--ele">REALIZACJE</li>
+              <li class="footer__list--ele">KONTAKT</li>
             </ul>
           </div>
           <div class="footer__column">
-              <ul>Znajdź nas
-              <li></li>
-              <li></li>
+          <h4 class="footer__column--title">
+          Znajdź nas
+            </h4>
+              <ul class="footer__list">
+              <li><i class="fa fa-facebook-official"></i></li>
+              <li><i class="fa fa-youtube-play"></i></li>
             </ul>
           </div>
         </div>
