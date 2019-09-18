@@ -1,8 +1,9 @@
 .features {
   @extend .section;
-  background-color: color(secondary);
 
+  background-color: color(secondary);
   position: relative;
+
   &__wrapper {
     display: flex;
     z-index: 1;

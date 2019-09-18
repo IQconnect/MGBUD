@@ -38,3 +38,8 @@
   @extend %text;
   @include cssLock("font-size", 360, 1920, (10, 12));
 }
+
+.special {
+  @extend %text;
+  @include cssLock("font-size", 360, 1920, (5, 8));
+}
