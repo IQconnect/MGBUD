@@ -1,5 +1,6 @@
 .offer {
   @extend .section;
+
   background-color: color(lightgrey);
   position: relative;
 
@@ -26,7 +27,6 @@
   &__ele {
     border-radius: 0 $gutter * 3.5 0 0;
     margin: 0;
-
     padding: $gutter * 3;
     display: flex;
     flex-grow: 1;
@@ -36,6 +36,7 @@
     span {
       transition: all 0.3s ease;
     }
+
     &:hover {
       background-color: color(primary);
 
@@ -44,11 +45,13 @@
       }
     }
   }
+
   &__singlebox {
-    margin: $gutter * 6 0px;
+    margin: $gutter * 6 0;
     display: flex;
     justify-content: space-between;
   }
+
   &__textbox {
     width: 55%;
   }

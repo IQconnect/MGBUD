@@ -1,6 +1,7 @@
 .section {
   padding: $gutter * 15 0;
   overflow: hidden;
+
   @media (max-width: 998px) {
     padding: $gutter * 8 0;
   }

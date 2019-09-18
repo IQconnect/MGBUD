@@ -1,5 +1,6 @@
 .form {
   $root: &;
+
   margin: auto;
   position: relative;
   width: 100%;
@@ -18,15 +19,6 @@
     }
   }
 
-  &__nocheck {
-    position: absolute;
-    //opacity: 0;
-    cursor: pointer;
-
-    &:hover + #{$root}__checkmark {
-      background-color: color(grey);
-    }
-  }
   &__checkmark {
     position: absolute;
     top: 4%;
@@ -37,6 +29,7 @@
     border: 1px solid color(grey);
     border-radius: 50%;
   }
+
   &__label {
     @extend .text;
 
@@ -48,6 +41,7 @@
     @extend .special;
 
     color: color(primary);
+
     & + #{$root}__checkmark {
       background-color: red;
     }
@@ -74,6 +68,17 @@
       }
     }
   }
+
+  &__nocheck {
+    position: absolute;
+    //opacity: 0;
+    cursor: pointer;
+
+    &:hover + #{$root}__checkmark {
+      background-color: color(grey);
+    }
+  }
+
   &__input {
     @extend .text;
 
@@ -95,13 +100,14 @@
       }
     }
   }
+
   &__bar {
     position: relative;
     display: block;
     width: 100%;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: "";
       height: 2px;
       width: 0;

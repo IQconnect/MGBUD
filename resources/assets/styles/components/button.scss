@@ -10,6 +10,7 @@
 
   &--buttonbg {
     background: color(primary);
+
     &:hover {
       background: darken(color(primary), 8%);
       transition: all 0.3s ease;

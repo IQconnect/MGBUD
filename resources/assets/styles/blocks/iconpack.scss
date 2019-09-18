@@ -24,18 +24,18 @@
       }
     }
   }
+
   &__desc {
     @extend .small-text;
+
     color: color(primary);
     margin-top: $gutter * 1;
     font-weight: 800;
   }
+
   &__ele {
     @include cssLock("padding", 360, 1920, ($_gutter * 2, $_gutter * 4));
 
-    @include media("lg") {
-      justify-self: auto;
-    }
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -43,6 +43,10 @@
     background-color: color(lightgrey);
     justify-self: center;
     border-radius: 0 ($gutter * 3.5) 0 0;
+
+    @include media("lg") {
+      justify-self: auto;
+    }
 
     &:hover {
       background-color: color(primary);

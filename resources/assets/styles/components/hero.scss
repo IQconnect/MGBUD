@@ -1,0 +1,144 @@
+.hero {
+  min-height: 100vh;
+  max-height: 1000px;
+  height: 150vh;
+  position: relative;
+  overflow: hidden;
+
+  @include media("md") {
+    height: $gutter * 60;
+    //min-height: 100vh;
+  }
+
+  @media (max-width: 567px) {
+    margin-top: $gutter * 16;
+  }
+
+  &__info {
+    position: absolute;
+    top: 35%;
+    right: 55%;
+    left: 0;
+    padding-left: 0;
+    opacity: 0;
+    pointer-events: none;
+
+    @include media("md") {
+      position: absolute;
+    }
+
+    @media (max-width: 1600px) {
+      right: 50%;
+    }
+
+    @media (max-width: 998px) {
+      right: 10%;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 567px) {
+      left: 0;
+      top: 0;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    &.-is-active {
+      pointer-events: initial;
+      animation: show 0.4s ease-in both;
+    }
+
+    &.-on-hold {
+      animation: hide 0.6s ease-in both;
+      pointer-events: none !important;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    z-index: -1;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+
+    @include media("sm") {
+      display: none;
+    }
+
+    &.-is-active {
+      pointer-events: initial;
+      animation: showIMG 0.4s ease-in both;
+    }
+
+    &.-on-hold {
+      animation: hideIMG 0.6s ease-in both;
+      pointer-events: none !important;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: $gutter * 4;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY($gutter * 4);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes showIMG {
+  0% {
+    opacity: 0;
+    transform: translateY(-$gutter * 4);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-$gutter * 4);
+  }
+}
+
+@keyframes hideIMG {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY($gutter * 4);
+  }
+}

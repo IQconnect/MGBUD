@@ -4,12 +4,14 @@
   &__wrapper {
     display: flex;
   }
+
   &__box {
     display: flex;
     justify-content: space-between;
     height: 85vh;
     width: 100%;
   }
+
   &__img {
     position: relative;
     width: 20%;
