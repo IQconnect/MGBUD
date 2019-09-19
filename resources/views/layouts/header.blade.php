@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" header>
   <div class="container">
     <div class="header__wraper">
       <a class="header__logo" href="{{ home_url('/') }}">
@@ -9,13 +9,13 @@
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
         </button>
-      <div class="header__menu" data-nav>
+      <div class="header__menu" data-nav >
         <div class="header__contact">
           <p class="header__contact--ele"> TELEFON :  <a href="" alt="">{{ get_option_field('telhead') }}</a></p>
           <p class="header__contact--ele"> EMAIL :  <a href="" alt="">{{ get_option_field('emailhead') }}</a></p>
         </div>
 
-        <nav class="header__nav" >
+        <nav class="header__nav"  >
               @if (has_nav_menu('primary_navigation'))
               {!! wp_nav_menu(
                 [
