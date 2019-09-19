@@ -1,11 +1,17 @@
 .list {
-  display: flex;
-  margin: 0;
-  padding: 0;
+  flex-direction: column;
   list-style-type: none;
-  //padding: 0;
+  padding: 0;
 
-  &--round {
+  @include media("sm") {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  :first-child {
     border-radius: $gutter * 3.5 0 0 0;
   }
 }

@@ -12,8 +12,8 @@ import aboutUs from './routes/about';
 
 import slider from './components/slider';
 import rotator from './components/rotator';
-import hamburger from './components/hamburger'
-import popup from './components/popup'
+import hamburger from './components/hamburger';
+//import popup from './components/popup';
 
 
 /** Populate Router instance with DOM routes */
@@ -32,10 +32,9 @@ jQuery(document).ready(() => {
   slider.init();
   rotator.init();
   hamburger.init();
-  popup.init();
+  //popup.init();
 });
 
 // setTimeout(()=> {
 //   slider.resize();
 // }, 1000)
-

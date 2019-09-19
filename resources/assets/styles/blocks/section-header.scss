@@ -16,23 +16,27 @@
   &--light {
     color: color(light);
   }
+
   &--primary {
     color: color(primary);
   }
 
   &__headline {
     @extend .headline;
+
     display: block;
   }
 
   &__title {
     @extend .title;
+
     margin: auto;
     display: block;
   }
 
   &__sub {
     @extend .subtitle;
+
     display: block;
     margin-bottom: ($gutter * 1);
   }

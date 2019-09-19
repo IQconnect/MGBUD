@@ -1,6 +1,7 @@
 /** Vendors */
 
 @import "vendors/scss-lock/css-lock";
+@import "vendors/_flickity";
 @import "vendors/fonts";
 
 /** Common */
@@ -28,7 +29,7 @@
 @import "common/global";
 
 /** Components */
-
+@import "components/hero";
 @import "components/typography";
 @import "components/single-realization";
 @import "components/container";

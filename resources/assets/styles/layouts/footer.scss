@@ -3,7 +3,6 @@
 
   padding-top: ($gutter * 6);
   padding-bottom: 0;
-
   background-color: color(primary);
 
   &__info {
@@ -12,6 +11,7 @@
     justify-content: space-around;
     margin-bottom: ($gutter * 10);
   }
+
   &__column {
     display: flex;
     flex-direction: column;
@@ -34,6 +34,7 @@
 
     &--subtitle {
       @extend .subtitle;
+
       margin-bottom: ($gutter * 2);
       font-weight: 600;
     }
@@ -42,9 +43,11 @@
       line-height: ($gutter * 2.5);
       margin-bottom: ($gutter * 2);
     }
+
     &--anchor {
       font-weight: 700;
     }
+
     &--hover {
       :hover {
         font-weight: 700;
@@ -74,8 +77,10 @@
       z-index: 2;
     }
   }
+
   &__textbar {
     @extend .text;
+
     display: flex;
     flex-direction: column;
 
@@ -83,6 +88,7 @@
       @extend .special;
     }
   }
+
   &__logo {
     position: relative;
     padding: ($gutter * 5);

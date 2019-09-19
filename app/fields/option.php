@@ -10,8 +10,10 @@ $option_page
     ->setLocation('options_page', '==', 'acf-options-ustawienia-strony');
 
 $option_page
-    ->addTab('Main', ['label' => 'Ustawienia główne', 'placement' => 'left'])
+    ->addTab('Header', ['label' => 'Ustawienia główne', 'placement' => 'left'])
         ->addImage('logo')
+        ->addText('telhead', ['label' => 'Telephone'])
+        ->addText('emailhead', ['label' => 'Email'])
     ->addTab('Social media', ['label' => 'Social Media', 'placement' => 'left'])
         ->addRepeater('icons', ['min' => 0, 'layout' => 'table'])
             ->addText('icon', ['title' => 'Font awesome kod ikonki'])
@@ -35,10 +37,7 @@ $option_page
         ->endRepeater()
         ->addRepeater('footer_tel', ['label' => 'Tel', 'min' => 0, 'layout' => 'table'])
             ->addText('tel', ['title' => 'Tel'])
-        ->endRepeater();
-
-
-
-
+        ->endRepeater()
+        ->addImage('IQlogo');
 
 return $option_page;

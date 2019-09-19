@@ -13,12 +13,15 @@
 
   &__textbox {
     padding: ($gutter * 6);
+
     &--primary {
       color: color(primary);
     }
   }
+
   &__desc {
     @extend .text;
+
     color: color(grey);
   }
 

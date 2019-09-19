@@ -1,10 +1,10 @@
 <!doctype html>
 <html {!! get_language_attributes() !!}>
   @include('partials.head')
-  <body @php body_class() @endphp style="overflow-x: hidden">
+  <body @php body_class() @endphp  data-body style="overflow-x: hidden">
     <div class="preloader" preloader ></div>
     @php do_action('get_header') @endphp
-    @include('partials.header')
+    @include('layouts.header')
     <div class="wrap" role="document">
       <div class="content">
         <main class="main">
@@ -18,8 +18,7 @@
       </div>
     </div>
     @php do_action('get_footer') @endphp
-    @include('partials.footer')
-    @include('partials.popup')
+    @include('layouts.footer')
     @php wp_footer() @endphp
   </body>
 </html>

@@ -1,13 +1,14 @@
 .iconlist {
   display: flex;
   flex-direction: column;
-  list-style-position: inside;
   list-style: none;
+  list-style-position: inside;
   margin: 0;
   padding: 0;
 
   &__elem {
     @extend .text;
+
     margin-bottom: ($gutter * 7);
     display: flex;
     justify-content: center;
@@ -17,7 +18,7 @@
       margin-bottom: 0;
     }
 
-    &:before {
+    &::before {
       content: "";
       width: ($gutter * 1);
       height: ($gutter * 1);
