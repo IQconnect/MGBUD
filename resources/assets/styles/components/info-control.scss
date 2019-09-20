@@ -1,0 +1,21 @@
+.slideControl {
+  padding: 6px;
+  background-color: color(primary);
+  //position: absolute;
+  left: 50%;
+  bottom: 25px;
+  border-radius: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+  z-index: 999;
+  display: inline-block;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.-is-active {
+    background-color: color(special);
+    opacity: 1;
+  }
+}
