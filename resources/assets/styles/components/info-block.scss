@@ -39,12 +39,4 @@
     color: color(light);
     border-radius: 0 $gutter * 3.5 0 0;
   }
-
-  &__nav {
-    font-size: 30px;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
 }

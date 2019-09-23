@@ -54,6 +54,7 @@ const rotator = {
         this.holdController(this.activ);
         if (direction) this.slide(direction);
         this.setCurrent(this.activ);
+        this.setButton(this.activ);
         $this.disabled = true;
 
         setTimeout(() => {
@@ -78,40 +79,44 @@ const rotator = {
       setTimeout(() => {
         if (index == $i) element.classList.add(this.addClass);
         else element.classList.remove(this.addClass);
+      }, 600);
+
+      setTimeout(() => {
+        element.classList.remove(this.holdClass);
       }, 700);
-
-      setTimeout(() => {
-        element.classList.remove(this.holdClass);
-      }, 800);
     });
 
-    Array.from(this.trigger).forEach((element, index) => {
-      setTimeout(() => {
-        if (index == $i) element.classList.add(this.addClass);
-        else element.classList.remove(this.addClass);
-      }, 400);
 
-      setTimeout(() => {
-        element.classList.remove(this.holdClass);
-      }, 500);
-    });
 
     Array.from(this.image).forEach((element, index) => {
       setTimeout(() => {
         if (index == $i) element.classList.add(this.addClass);
         else element.classList.remove(this.addClass);
-      }, 700);
+      }, 600);
 
       setTimeout(() => {
         element.classList.remove(this.holdClass);
+      }, 700);
+    });
+  },
+
+  setButton($i){
+    Array.from(this.trigger).forEach((element, index) => {
+      setTimeout(() => {
+        if (index == $i) element.classList.add(this.addClass);
+        else element.classList.remove(this.addClass);
       }, 800);
+
+      setTimeout(() => {
+        element.classList.remove(this.holdClass);
+      }, 700);
     });
   },
 
   holdController($i) {
     this.elem[$i].classList.add(this.holdClass);
-    this.trigger[$i].classList.add(this.holdClass);
     this.image[$i].classList.add(this.holdClass);
+    this.trigger[$i].classList.add(this.holdClass);
   },
 };
 
