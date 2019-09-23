@@ -10,25 +10,23 @@
     //min-height: 100vh;
   }
 
-  @media (max-width: 567px) {
-    margin-top: $gutter * 16;
+  &__box {
+    position: absolute;
+    //top: 15%;
+    //right: 15%;
+    z-index: 10;
   }
 
   &__info {
     position: absolute;
-    top: 35%;
-    right: 55%;
+    top: 25%;
     left: 0;
-    padding-left: 0;
     opacity: 0;
+    padding-left: 0;
     pointer-events: none;
 
     @include media("md") {
       position: absolute;
-    }
-
-    @media (max-width: 1600px) {
-      right: 50%;
     }
 
     @media (max-width: 998px) {
@@ -63,17 +61,12 @@
   &__image {
     position: absolute;
     top: 0;
-    left: 40%;
     z-index: -1;
     opacity: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: right;
-
-    @include media("sm") {
-      display: none;
-    }
 
     &.-is-active {
       pointer-events: initial;

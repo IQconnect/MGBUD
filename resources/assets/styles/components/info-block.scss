@@ -1,0 +1,50 @@
+.info-block {
+  @extend .container;
+
+  width: 50%;
+  padding: ($gutter * 5) ($gutter * 2);
+
+  @media (max-width: 998px) {
+    max-width: 100%;
+  }
+
+  &__box {
+    margin-left: $gutter * 7;
+    margin-right: $gutter * 0;
+
+    @include media("md") {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    @extend .headline;
+
+    background-color: transparentize(color(grey), 0.8);
+    color: color(light);
+    border-radius: 0 $gutter * 3.5 $gutter * 3.5 0;
+
+    &--ele {
+      margin-left: ($gutter * 1);
+    }
+  }
+
+  &__title {
+    @extend .text;
+
+    padding: ($gutter * 2);
+    width: 60%;
+    background-color: color(secondary);
+    color: color(light);
+    border-radius: 0 $gutter * 3.5 0 0;
+  }
+
+  &__nav {
+    font-size: 30px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}

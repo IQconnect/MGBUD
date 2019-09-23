@@ -42,7 +42,8 @@
 
   &__hamburger {
     z-index: 40;
-    margin-right: $gutter * 2;
+    margin-top: ($gutter * 3);
+    margin-right: ($gutter * 2);
 
     @include media("sm") {
       display: none;

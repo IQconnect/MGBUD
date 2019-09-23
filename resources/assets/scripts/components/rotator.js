@@ -1,96 +1,118 @@
 const CONFIG = {
-    TRIGGER : 'slide-button',
-    ELEM : 'slide',
-    IMAGE: 'slide-img',
-    CLASS : {
-        ADD: '-is-active',
-        HOLD: '-on-hold',
-    },
+  TRIGGER: 'slide-button',
+  ELEM: 'slide',
+  IMAGE: 'slide-img',
+  CLASS: {
+    ADD: '-is-active',
+    HOLD: '-on-hold',
+  },
 };
 
 const rotator = {
-    init() {
-        const { TRIGGER, ELEM, IMAGE, CLASS } = CONFIG;
-        this.trigger = document.querySelectorAll(`[${TRIGGER}]`);
-        this.elem = document.querySelectorAll(`[${ELEM}]`);
-        this.image = document.querySelectorAll(`[${IMAGE}]`);
-        this.activ = 0;
-        this.addClass = CLASS.ADD;
-        this.holdClass = CLASS.HOLD;
-        this.max = this.elem.length - 1;
-        this.addEvents();
-    },
+  init() {
+    const { TRIGGER, ELEM, IMAGE, CLASS } = CONFIG;
+    this.trigger = document.querySelectorAll(`[${TRIGGER}]`);
+    this.elem = document.querySelectorAll(`[${ELEM}]`);
+    this.image = document.querySelectorAll(`[${IMAGE}]`);
+    this.activ = 0;
+    this.addClass = CLASS.ADD;
+    this.holdClass = CLASS.HOLD;
+    this.max = this.elem.length - 1;
+    this.addEvents();
 
-    addEvents() {
-        Array.from(this.trigger).forEach(element => {
+  /*  setInterval(()=>{
+      console.log('test');
+      this.addTimer(this.activ)
+    }, 5000);*/
+  },
 
-            element.disabled = false;
 
-            element.addEventListener('click', (event) => {
-                const $this = event.currentTarget;
-                const direction = $this.getAttribute('data-direction');
-                
-                this.holdController(this.activ);
+  addTimer(){
+    console.log(this.activ);
+    if(this.activ<=this.max){
+      this.holdController(this.activ);
+      this.setCurrent(this.activ);
+      this.activ=this.activ+1;
+    }
 
-                if(direction == 'next') this.increment();                   
-                else this.decrement();
+    else{
+      this.activ=0;
+    }
+  },
 
-                this.setCurrent(this.activ);
-                $this.disabled = true;
+  addEvents() {
+    Array.from(this.trigger).forEach(element => {
 
-                setTimeout(()=> {
-                    $this.disabled = false;
-                }, 400)
-            })
-        });
-    },
+      element.disabled = false;
 
-    increment() {
-        this.activ++;
+      element.addEventListener('click', event => {
+        const $this = event.currentTarget;
+        const direction = $this.getAttribute('data-direction');
 
-        if(this.activ > this.max) {
-            this.activ = 0;
-        }
-    },
 
-    decrement() {
-        this.activ--;
 
-        if(this.activ < 0) {
-            this.activ = this.max;
-        }
-    },
+        this.holdController(this.activ);
+        if (direction) this.slide(direction);
+        this.setCurrent(this.activ);
+        $this.disabled = true;
 
-    setCurrent($i) {
-        Array.from(this.elem).forEach((element, index) => {
-            setTimeout(()=>{
-                if(index == $i) element.classList.add(this.addClass);
-                else element.classList.remove(this.addClass);
-            }, 700);
+        setTimeout(() => {
+          $this.disabled = false;
+        }, 400);
+      });
+    });
+  },
 
-            
-            setTimeout(()=>{
-                element.classList.remove(this.holdClass);
-            }, 800);
-        });  
+  slide(dir) {
+    this.activ = dir;
 
-        Array.from(this.image).forEach((element, index) => {
-            setTimeout(()=>{
-                if(index == $i) element.classList.add(this.addClass);
-                else element.classList.remove(this.addClass);
-            }, 700);
+    if (this.activ > this.max) {
+      this.activ = 0;
+    }
+  },
 
-            
-            setTimeout(()=>{
-                element.classList.remove(this.holdClass);
-            }, 800);
-        });  
-    },
 
-    holdController($i) {
-         this.elem[$i].classList.add(this.holdClass);
-         this.image[$i].classList.add(this.holdClass);
-    },
+
+  setCurrent($i) {
+    Array.from(this.elem).forEach((element, index) => {
+      setTimeout(() => {
+        if (index == $i) element.classList.add(this.addClass);
+        else element.classList.remove(this.addClass);
+      }, 700);
+
+      setTimeout(() => {
+        element.classList.remove(this.holdClass);
+      }, 800);
+    });
+
+    Array.from(this.trigger).forEach((element, index) => {
+      setTimeout(() => {
+        if (index == $i) element.classList.add(this.addClass);
+        else element.classList.remove(this.addClass);
+      }, 400);
+
+      setTimeout(() => {
+        element.classList.remove(this.holdClass);
+      }, 500);
+    });
+
+    Array.from(this.image).forEach((element, index) => {
+      setTimeout(() => {
+        if (index == $i) element.classList.add(this.addClass);
+        else element.classList.remove(this.addClass);
+      }, 700);
+
+      setTimeout(() => {
+        element.classList.remove(this.holdClass);
+      }, 800);
+    });
+  },
+
+  holdController($i) {
+    this.elem[$i].classList.add(this.holdClass);
+    this.trigger[$i].classList.add(this.holdClass);
+    this.image[$i].classList.add(this.holdClass);
+  },
 };
 
 export default rotator;
