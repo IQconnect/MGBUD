@@ -19,11 +19,28 @@ const rotator = {
     this.holdClass = CLASS.HOLD;
     this.max = this.elem.length - 1;
     this.addEvents();
+
+  /*  setInterval(()=>{
+      console.log('test');
+      this.addTimer(this.activ)
+    }, 5000);*/
+  },
+
+
+  addTimer(){
+    console.log(this.activ);
+    if(this.activ<=this.max){
+      this.holdController(this.activ);
+      this.setCurrent(this.activ);
+      this.activ=this.activ+1;
+    }
+
+    else{
+      this.activ=0;
+    }
   },
 
   addEvents() {
-
-    setInterval(this.timer(), 15);
     Array.from(this.trigger).forEach(element => {
 
       element.disabled = false;
@@ -45,12 +62,6 @@ const rotator = {
       });
     });
   },
-
-timer(){
-
-  console.log();
-},
-
 
   slide(dir) {
     this.activ = dir;
