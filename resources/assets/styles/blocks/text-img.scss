@@ -21,10 +21,9 @@
 
   &__textbox {
     width: 100%;
-    justify-self: flex-end;
 
     @include media("lg") {
-      width: 48%;
+      width: 50%;
     }
 
     &--left {
