@@ -4,6 +4,7 @@
   height: 150vh;
   position: relative;
   overflow: hidden;
+  margin-bottom: $gutter * 15;
 
   @include media("md") {
     height: $gutter * 60;

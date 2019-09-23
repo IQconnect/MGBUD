@@ -5,7 +5,7 @@
   position: relative;
 
   &__wrapper {
-    padding: ($gutter * 8) 0;
+    margin-top: ($gutter * 13);
     z-index: 10;
     position: relative;
   }
@@ -47,12 +47,18 @@
   }
 
   &__singlebox {
-    margin: $gutter * 6 0;
+    margin-top: $gutter * 6;
     display: flex;
     justify-content: space-between;
   }
 
   &__textbox {
     width: 55%;
+  }
+
+  &__desc {
+    @extend .text;
+
+    line-height: $gutter * 4;
   }
 }

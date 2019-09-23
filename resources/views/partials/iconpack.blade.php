@@ -1,4 +1,4 @@
-<section class="iconspack">
+<section class="iconpack">
 	<div class="container">
 		<ul class="iconpack__wrapper">
 			@foreach ( $data['icon']  as $item)

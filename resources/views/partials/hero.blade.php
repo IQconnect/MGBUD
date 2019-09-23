@@ -7,9 +7,9 @@
 
 <section class="hero">
     <div class="container">
-            <div class="hero_box">
+            <div class="hero__box">
                     @include('layouts.components.info-control')
-                    </div>
+            </div>
             @if ($hero)
                 @foreach ( $hero as $elem)
                     <div class="hero__info @if($loop->first) -is-active @endif" slide>
