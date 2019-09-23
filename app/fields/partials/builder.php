@@ -10,6 +10,7 @@ $builder
    ->addTab('builder', ['placement' => 'left'])
       ->addFlexibleContent('components', ['button_label' => 'Dodaj komponent'])
          ->addLayout(get_field_partial('partials.hero'))
-         ->addLayout(get_field_partial('partials.text-img'));
+         ->addLayout(get_field_partial('partials.text-img'))
+         ->addLayout(get_field_partial('partials.iconpack'));
 
 return $builder;

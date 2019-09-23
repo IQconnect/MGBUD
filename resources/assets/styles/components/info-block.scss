@@ -21,7 +21,7 @@
   &__text {
     @extend .headline;
 
-    background-color: transparentize(color(grey), 0.8);
+    //background-color: transparentize(color(grey), 0.8);
     color: color(light);
     border-radius: 0 $gutter * 3.5 $gutter * 3.5 0;
 

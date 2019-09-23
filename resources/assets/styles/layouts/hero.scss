@@ -79,11 +79,15 @@
   &__nav {
     font-size: 50px;
     position: absolute;
-    left: 49%;
-    top: 45%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+    bottom: 20%;
+    z-index: 20;
+    display: flex;
+  }
+
+  &__box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 
