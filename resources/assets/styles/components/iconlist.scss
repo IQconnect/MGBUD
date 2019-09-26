@@ -20,8 +20,8 @@
 
     &::before {
       content: "";
-      width: ($gutter * 1);
-      height: ($gutter * 1);
+      width: ($gutter * 0.9);
+      height: ($gutter * 0.9);
       padding: ($gutter * 0.1);
       background-color: color(special);
       border-radius: 100%;

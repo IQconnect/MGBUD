@@ -15,7 +15,7 @@
 					<p class="offer__desc">
 							{!!  $data['desc'] !!}
 					</p>
-					<a class="button button--buttonbg" href="">Dowiedz się więcej</a>
+					<a class="button button--buttonbg" href="{{ $data['link']['url'] }}">Dowiedz się więcej</a>
 				</div>
 				<figure class="text-img__imagebox">
 						{!! image($data['image']['ID'], 'full', 'img') !!}

@@ -1,11 +1,13 @@
 .send {
   @extend .section;
 
+  padding-top: $gutter * 13;
   background-color: color(secondary);
   position: relative;
 
   &__wrapper {
     display: flex;
+    justify-content: flex-end;
   }
 
   &__box {
@@ -14,7 +16,6 @@
   }
 
   &__form {
-    width: 70%;
     display: flex;
   }
 

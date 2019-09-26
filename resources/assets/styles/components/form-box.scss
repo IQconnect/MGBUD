@@ -1,0 +1,15 @@
+.form-box {
+  @include cssLock("padding-top", 360, 1920, ($_gutter * 5, $_gutter * 8));
+  @include cssLock("padding-bottom", 360, 1920, ($_gutter * 3, $_gutter * 3));
+  @include cssLock("padding-left", 360, 1920, ($_gutter * 4, $_gutter * 8));
+  @include cssLock("padding-right", 360, 1920, ($_gutter * 4, $_gutter * 8));
+
+  position: relative;
+  z-index: 2;
+  display: flex;
+  border-radius: 0 ($gutter * 3.5) 0 0;
+
+  &--light {
+    background-color: color(light);
+  }
+}

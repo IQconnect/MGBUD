@@ -17,5 +17,5 @@ $offer
 	->addImage('image',['label' => 'Zdjęcie', 'wrapper' => ['width' => '100%']])
 	->addTextarea('offer_title', ['rows' => '1', 'new_lines' => 'br', 'label' => 'Tytuł'])
 	->addTextarea('desc', ['rows' => '3', 'new_lines' => 'br', 'label' => 'Opis'])
-	->addPageLink('link', ['type' => 'page_link', ['label' => 'Link']]);
+	->addLink('link', ['label' => 'Link']);
 return $offer;

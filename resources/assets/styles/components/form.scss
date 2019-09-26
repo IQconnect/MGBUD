@@ -28,6 +28,7 @@
     background-color: color(lightgray);
     border: 1px solid color(grey);
     border-radius: 50%;
+    transition: $transition * 4;
   }
 
   &__label {
@@ -71,11 +72,11 @@
 
   &__nocheck {
     position: absolute;
-    //opacity: 0;
+    opacity: 0;
     cursor: pointer;
 
-    &:hover + #{$root}__checkmark {
-      background-color: color(grey);
+    &:checked + #{$root}__checkmark {
+      background-color: color(primary);
     }
   }
 

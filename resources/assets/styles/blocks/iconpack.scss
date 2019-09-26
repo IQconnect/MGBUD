@@ -1,12 +1,13 @@
 .iconpack {
   @extend .section;
 
-  padding-top: 0;
+  padding: 0;
 
   &__wrapper {
     @include cssLock("grid-gap", 360, 1920, ($_gutter * 1, $_gutter * 2));
 
     padding: 0;
+    margin: 0;
 
     @include media("md") {
       grid-template-columns: repeat(5, 1fr);

@@ -5,6 +5,7 @@
   position: relative;
 
   &__wrapper {
+    margin-top: ($gutter * 13);
     display: flex;
     z-index: 1;
     position: relative;

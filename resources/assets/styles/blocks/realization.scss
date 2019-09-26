@@ -1,11 +1,9 @@
 .realization {
   @extend .section;
 
-  &__wrapper {
-    display: flex;
-  }
+  padding-top: $gutter * 13;
 
-  &__box {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
   }

@@ -1,14 +1,12 @@
 .hero {
-  min-height: 100vh;
-  max-height: 1000px;
-  height: 150vh;
+  min-height: calc(100vh - #{$gutter * 16});
+  //height: 150vh;
   position: relative;
   overflow: hidden;
   margin-bottom: $gutter * 15;
 
   @include media("md") {
     height: $gutter * 60;
-    //min-height: 100vh;
   }
 
   &__info {
@@ -80,7 +78,7 @@
   &__nav {
     font-size: 50px;
     position: absolute;
-    bottom: 20%;
+    bottom: 5%;
     z-index: 20;
     display: flex;
   }
