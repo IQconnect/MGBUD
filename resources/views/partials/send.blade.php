@@ -1,4 +1,7 @@
 <section class="send">
+		<div class="features__bg">
+				{!!  $data['map'] !!}
+		</div>
 	<div class="container">
 		@includeWhen($data['header'] == 'tak', 'partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle'], 'class'=>'section-header--center section-header--addmargin send__title'])
 		<div class="send__wrapper">

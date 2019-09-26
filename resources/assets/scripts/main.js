@@ -11,6 +11,7 @@ import home from './routes/home';
 import aboutUs from './routes/about';
 
 import slider from './components/slider';
+import map from './components/map';
 import rotator from './components/rotator';
 import hamburger from './components/hamburger';
 //import popup from './components/popup';
@@ -32,6 +33,7 @@ jQuery(document).ready(() => {
   slider.init();
   rotator.init();
   hamburger.init();
+  map.init();
   //popup.init();
 });
 
