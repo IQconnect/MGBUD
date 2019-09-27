@@ -241,15 +241,6 @@ function the_breadcrumb() {
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
 
-class Placeholder {
-    function image() {
-        return "images/bg-juno.jpg";
-    }
-
-    function title() {
-        return 'MG-BUD';
-    }
-}
 
 /***
  * Pobieranie danych z ustawień szablonu
@@ -269,7 +260,9 @@ add_action( 'init', function () {
     }
 
 
+
 function image($id, $size, $class) {
     return wp_get_attachment_image($id, $size, false, ['class'=>$class]);
 }
+
 });

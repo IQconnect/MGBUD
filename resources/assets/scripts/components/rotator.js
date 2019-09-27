@@ -21,14 +21,12 @@ const rotator = {
     this.addEvents();
 
   /*  setInterval(()=>{
-      console.log('test');
       this.addTimer(this.activ)
     }, 5000);*/
   },
 
 
   addTimer(){
-    console.log(this.activ);
     if(this.activ<=this.max){
       this.holdController(this.activ);
       this.setCurrent(this.activ);

@@ -17,12 +17,22 @@
     flex-direction: column;
 
     &--title {
-      @extend .title;
+      @extend .large-text;
 
       font-weight: 600;
       color: color(light);
       margin-bottom: ($gutter * 2);
     }
+  }
+
+  &__social {
+    list-style: none;
+    color: color(light);
+    display: flex;
+    font-size: ($gutter * 6);
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
   }
 
   &__list {

@@ -31,7 +31,6 @@ const toggleMenu = {
 
   toggleOverflow(HIDDEN) {
     this.$body.classList.toggle(HIDDEN);
-    console.log('test');
   },
 };
 

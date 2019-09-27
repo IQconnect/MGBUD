@@ -1,9 +1,10 @@
 <section class="send">
-		<div class="features__bg">
-				{!!  $data['map'] !!}
+		<div class="send__bg">
+			 {!! do_shortcode('[google_map_easy id="1"]') !!}
 		</div>
+
 	<div class="container">
-		@includeWhen($data['header'] == 'tak', 'partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle'], 'class'=>'section-header--center section-header--addmargin send__title'])
+			@includeWhen($data['header'] == 'tak', 'partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle'], 'class'=>'section-header--center section-header--addmargin send__title'])
 		<div class="send__wrapper">
 			<div class=" send__form">
 				<div class="form-box form-box--light">

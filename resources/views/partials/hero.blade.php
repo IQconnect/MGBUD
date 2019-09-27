@@ -1,5 +1,4 @@
 @php
-    // $placeholder = new Placeholder;
     $hero = get_field('hero', 'options');
 @endphp
 

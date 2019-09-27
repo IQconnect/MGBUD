@@ -11,11 +11,10 @@ import home from './routes/home';
 import aboutUs from './routes/about';
 
 import slider from './components/slider';
-import map from './components/map';
+//import map from './components/map';
 import rotator from './components/rotator';
 import hamburger from './components/hamburger';
 //import popup from './components/popup';
-
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -23,7 +22,7 @@ const routes = new Router({
   common,
   // Home page
   home,
-  // About Us page, note the change from about-us to aboutUs.
+  // About Us page, note the change from about-us to aboutUs
   aboutUs,
 });
 
@@ -33,7 +32,7 @@ jQuery(document).ready(() => {
   slider.init();
   rotator.init();
   hamburger.init();
-  map.init();
+ // map.init();
   //popup.init();
 });
 

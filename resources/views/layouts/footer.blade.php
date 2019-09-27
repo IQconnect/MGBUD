@@ -35,9 +35,10 @@
           <h4 class="footer__column--title">
           Znajdź nas
             </h4>
-              <ul class="footer__list">
-              <li><i class="fa fa-facebook-official"></i></li>
-              <li><i class="fa fa-youtube-play"></i></li>
+              <ul class="footer__social">
+                  @foreach (  get_option_field("icons")  as $item)
+                  <li><a href="{!!  $item['link'] !!}" alt="{!!  $item['link'] !!}"><i class="{!!  $item['icon'] !!}"></i></a></li>
+              @endforeach
             </ul>
           </div>
         </div>
@@ -47,7 +48,7 @@
             <p class="footer__textbar--cookie">Strona wykorzystuje pliki cookies dla lepszego działania. Korzystając ze strony godzisz się na to.</p>
           </div>
           <figure class="footer__logo">
-            <a href="http://iqconnect.pl/"><img class="img img--contain" src="{{ get_option_field("IQlogo")['url'] }}" alt="{{ get_option_field("logo")['alt'] }}"></a>
+            <a href="https://iqconnect.pl/"><img class="img img--contain" src="{{ get_option_field("IQlogo")['url'] }}" alt="{{ get_option_field("logo")['alt'] }}"></a>
           </figure>
         </div>
       </div>

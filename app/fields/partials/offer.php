@@ -14,8 +14,11 @@ $offer = new FieldsBuilder('offer', ['label' => 'Oferta']);
 
 $offer
 	->addFields(get_field_partial('components.title'))
-	->addImage('image',['label' => 'Zdjęcie', 'wrapper' => ['width' => '100%']])
-	->addTextarea('offer_title', ['rows' => '1', 'new_lines' => 'br', 'label' => 'Tytuł'])
-	->addTextarea('desc', ['rows' => '3', 'new_lines' => 'br', 'label' => 'Opis'])
-	->addLink('link', ['label' => 'Link']);
+	->addRepeater('tab',['label' => 'Tabela ofert'])
+		->addGroup()
+		->addTextarea('tablename', ['rows' => '1', 'label' => 'Tytuł tabelki'])
+		->addImage('image',['label' => 'Zdjęcie', 'wrapper' => ['width' => '100%']])
+		->addWysiwyg('desc', ['rows' => '3', 'new_lines' => 'br', 'label' => 'Opis'])
+		->addLink('link', ['label' => 'Link'])
+    ->endRepeater();
 return $offer;
