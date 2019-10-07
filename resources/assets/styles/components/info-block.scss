@@ -1,20 +1,16 @@
 .info-block {
-  @extend .container;
+  //padding: ($gutter * 5) ($gutter * 2);
+  width: 90%;
 
-  width: 50%;
-  padding: ($gutter * 5) ($gutter * 2);
-
-  @media (max-width: 998px) {
-    max-width: 100%;
+  @include media("md") {
+    width: 55%;
   }
 
   &__box {
-    margin-left: $gutter * 7;
-    margin-right: $gutter * 0;
+    margin: 0;
 
     @include media("md") {
-      margin-left: 0;
-      margin-right: 0;
+      margin: 0;
     }
   }
 
@@ -34,9 +30,13 @@
     @extend .text;
 
     padding: ($gutter * 2);
-    width: 65%;
+    width: 80%;
     background-color: color(secondary);
     color: color(light);
     border-radius: 0 $gutter * 3.5 0 0;
+
+    @include media("md") {
+      width: 80%;
+    }
   }
 }

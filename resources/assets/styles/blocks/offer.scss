@@ -1,32 +1,61 @@
 .offer {
   @extend .section;
 
+  min-height: 105vh;
   background-color: color(lightgrey);
   position: relative;
+  padding-top: $gutter * 13;
+
+  @include media("xl") {
+    min-height: 130vh;
+  }
+
+  @include media("lg") {
+    min-height: 105vh;
+  }
 
   &__wrapper {
-    margin-top: ($gutter * 13);
     z-index: 10;
     position: relative;
   }
 
-  &__menu {
-    @extend .text;
+  &__singlebox {
+    margin-top: $gutter * 6;
+    position: absolute;
+    //display: flex;
+    display: none;
+    justify-content: space-between;
+    width: 100%;
 
-    color: color(primary);
-    font-weight: 600;
+    &.-is-active {
+      pointer-events: initial;
+      animation: showtab 0.4s ease-in both;
+      display: flex;
+    }
+
+    &.-on-hold {
+      animation: hidetab 0.6s ease-in both;
+      pointer-events: none !important;
+    }
+  }
+
+  &__menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: color(light);
     border-radius: 0 $gutter * 3.5 0 0;
-    list-style-type: none;
-    list-style-position: inside;
   }
 
   &__ele {
+    @extend .text;
+
+    color: color(primary);
+    font-weight: 600;
+    justify-content: center;
     border-radius: 0 $gutter * 3.5 0 0;
     margin: 0;
+    border: 0;
     padding: $gutter * 3;
     display: flex;
     flex-grow: 1;
@@ -46,12 +75,6 @@
     }
   }
 
-  &__singlebox {
-    margin-top: $gutter * 6;
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__textbox {
     width: 55%;
   }
@@ -60,5 +83,29 @@
     @extend .text;
 
     line-height: $gutter * 4;
+  }
+}
+
+@keyframes showtab {
+  0% {
+    opacity: 0;
+    transform: translateY(-$gutter * 4);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hidetab {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY($gutter * 4);
   }
 }

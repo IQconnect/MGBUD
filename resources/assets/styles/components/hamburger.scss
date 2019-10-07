@@ -39,6 +39,11 @@
 
   &.-is-active {
     visibility: visible;
+    margin-top: 35px;
+
+    @include media("sm") {
+      margin-top: 40px;
+    }
 
     #{$root}__line {
       width: 100%;

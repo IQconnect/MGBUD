@@ -1,38 +1,38 @@
 .hero {
-  min-height: calc(100vh - #{$gutter * 16});
+  height: calc(100vh - #{$gutter * 10});
   //height: 150vh;
   position: relative;
   overflow: hidden;
-  margin-bottom: $gutter * 15;
+  // margin-bottom: $gutter * 15;
 
   @include media("md") {
-    height: $gutter * 60;
+    height: calc(100vh - #{$gutter * 13});
+  }
+
+  &__wrapper {
+    @extend .container;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include media("md") {
+      height: 100%;
+    }
   }
 
   &__info {
     position: absolute;
     top: 25%;
-    left: 0;
+    left: 0%;
     opacity: 0;
     padding-left: 0;
     pointer-events: none;
+    z-index: 2;
 
-    @media (max-width: 998px) {
-      right: 10%;
-      display: flex;
-      justify-content: center;
-    }
-
-    @media (max-width: 567px) {
-      left: 0;
-      top: 0;
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
+    @include media("sm") {
+      top: 25%;
+      left: 0%;
     }
 
     &.-is-active {
@@ -44,6 +44,16 @@
       animation: hide 0.6s ease-in both;
       pointer-events: none !important;
     }
+  }
+
+  &__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: color(secondary);
+    opacity: 0.8;
+    z-index: 1;
   }
 
   &__image {

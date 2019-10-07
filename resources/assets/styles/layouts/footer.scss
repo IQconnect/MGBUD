@@ -29,10 +29,18 @@
     list-style: none;
     color: color(light);
     display: flex;
-    font-size: ($gutter * 6);
+    font-size: ($gutter * 7);
     padding: 0;
     margin: 0;
     justify-content: space-around;
+
+    &--el {
+      transition: $transition * 5;
+
+      &:hover {
+        color: color(special);
+      }
+    }
   }
 
   &__list {
@@ -60,7 +68,7 @@
 
     &--hover {
       :hover {
-        font-weight: 700;
+        color: color(special);
       }
     }
   }

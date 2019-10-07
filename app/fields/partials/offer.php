@@ -13,12 +13,7 @@ $config = (object) [
 $offer = new FieldsBuilder('offer', ['label' => 'Oferta']);
 
 $offer
-	->addFields(get_field_partial('components.title'))
-	->addRepeater('tab',['label' => 'Tabela ofert'])
-		->addGroup()
-		->addTextarea('tablename', ['rows' => '1', 'label' => 'Tytuł tabelki'])
-		->addImage('image',['label' => 'Zdjęcie', 'wrapper' => ['width' => '100%']])
-		->addWysiwyg('desc', ['rows' => '3', 'new_lines' => 'br', 'label' => 'Opis'])
-		->addLink('link', ['label' => 'Link'])
-    ->endRepeater();
+	->addTab('Tytuł sekcji')
+		->addFields(get_field_partial('components.title'))
+		->addRelationship('offerta', ['label'=> 'oferta', 'post_type'=>'offerty']);
 return $offer;

@@ -1,14 +1,19 @@
 .send {
   @extend .section;
 
-  padding-top: $gutter * 13;
   background-color: color(secondary);
   position: relative;
 
+  &__top {
+    padding: 50px;
+    background-color: color(primary);
+    z-index: 2;
+  }
+
   &__bg {
     margin: 0;
-    width: 60%;
-    height: 75%;
+    width: 65%;
+    height: 82%;
     position: absolute;
     z-index: 0;
     left: 0%;

@@ -1,10 +1,12 @@
 <section class="send">
-		<div class="send__bg">
-			 {!! do_shortcode('[google_map_easy id="1"]') !!}
-		</div>
-
+	<div class="send__top">
+		@includeWhen($data['header'] == 'tak', 'partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle'], 'class'=>'section-header--center send__title'])
+	</div>
+	<div class="send__bottom">
+	<div class="send__bg">
+			{!! do_shortcode('[google_map_easy id="1"]') !!}
+	</div>
 	<div class="container">
-			@includeWhen($data['header'] == 'tak', 'partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle'], 'class'=>'section-header--center section-header--addmargin send__title'])
 		<div class="send__wrapper">
 			<div class=" send__form">
 				<div class="form-box form-box--light">
@@ -33,10 +35,11 @@
 							<span class="form__checkmark"></span>
 							</label>
 						</div>
-						<a class="button button--buttonbg " href="">Dowiedz się więcej</a>
+						<a class="button button--buttonbg " href="">Wyślij</a>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </section>

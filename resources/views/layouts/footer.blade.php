@@ -37,7 +37,7 @@
             </h4>
               <ul class="footer__social">
                   @foreach (  get_option_field("icons")  as $item)
-                  <li><a href="{!!  $item['link'] !!}" alt="{!!  $item['link'] !!}"><i class="{!!  $item['icon'] !!}"></i></a></li>
+                  <li class="footer__social--el"><a href="{!!  $item['link'] !!}" alt="{!!  $item['link'] !!}"><i class="{!!  $item['icon'] !!}"></i></a></li>
               @endforeach
             </ul>
           </div>

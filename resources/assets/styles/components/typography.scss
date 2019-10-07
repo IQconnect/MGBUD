@@ -8,7 +8,7 @@
 .headline {
   @extend %text;
 
-  @include cssLock("font-size", 360, 1920, (24, 70));
+  @include cssLock("font-size", 360, 1920, (27, 65));
 
   font-weight: 600;
 }
@@ -16,21 +16,21 @@
 .title {
   @extend %text;
 
-  @include cssLock("font-size", 360, 1920, (18, 45));
+  @include cssLock("font-size", 360, 1920, (10, 45));
   //font-weight: 800;
 }
 
 .subtitle {
   @extend %text;
 
-  @include cssLock("font-size", 360, 1920, (12, 18));
+  @include cssLock("font-size", 360, 1920, (10, 18));
   //font-weight: 600;
 }
 
 .text {
   @extend %text;
 
-  @include cssLock("font-size", 360, 1920, (12, 16));
+  @include cssLock("font-size", 360, 1920, (8, 16));
 }
 
 .large-text {
@@ -51,4 +51,8 @@
   @extend %text;
 
   @include cssLock("font-size", 360, 1920, (5, 8));
+}
+
+.social {
+  @include cssLock("font-size", 360, 1920, (35, 45));
 }

