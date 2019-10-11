@@ -7,6 +7,8 @@ module.exports = {
       true,
       {
         ignoreAtRules: [
+          ".header",
+          "li",
           "extend",
           "at-root",
           "debug",
@@ -29,6 +31,6 @@ module.exports = {
           "screen"
         ]
       }
-    ],
+    ]
   }
 };

@@ -1,13 +1,21 @@
 .hero {
-  height: calc(100vh - #{$gutter * 10});
+  height: calc(100vh - #{$gutter * 9});
   //height: 150vh;
   position: relative;
   overflow: hidden;
   // margin-bottom: $gutter * 15;
 
-  @include media("md") {
-    height: calc(100vh - #{$gutter * 13});
+  @include media("xs") {
+    height: calc(100vh - #{$gutter * 30});
   }
+
+  @include media("md") {
+    height: calc(100vh - #{$gutter * 14});
+  }
+
+  // @include media("sm") {
+  //   height: calc(100vh - #{$gutter * 15});
+  // }
 
   &__wrapper {
     @extend .container;
@@ -115,7 +123,7 @@
 @keyframes showIMG {
   0% {
     opacity: 0;
-    transform: translateY(-$gutter * 4);
+    transform: translateY(0);
   }
 
   100% {
@@ -144,6 +152,6 @@
 
   100% {
     opacity: 0;
-    transform: translateY($gutter * 4);
+    transform: translateY(0);
   }
 }

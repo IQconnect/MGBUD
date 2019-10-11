@@ -1,31 +1,32 @@
 .offer {
-  @extend .section;
+  //@extend .section;
 
-  min-height: 105vh;
   background-color: color(lightgrey);
   position: relative;
-  padding-top: $gutter * 13;
-
-  @include media("xl") {
-    min-height: 130vh;
-  }
-
-  @include media("lg") {
-    min-height: 105vh;
-  }
+  padding-top: $gutter * 11;
 
   &__wrapper {
+    height: 90vh;
     z-index: 10;
     position: relative;
+
+    @include media("xs") {
+      height: 80vh;
+    }
   }
 
   &__singlebox {
-    margin-top: $gutter * 6;
+    margin-top: $gutter * 5;
     position: absolute;
     //display: flex;
     display: none;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+
+    @include media("md") {
+      justify-content: space-between;
+      margin-top: $gutter * 10;
+    }
 
     &.-is-active {
       pointer-events: initial;
@@ -76,13 +77,21 @@
   }
 
   &__textbox {
-    width: 55%;
+    width: 70%;
+
+    @include media("md") {
+      width: 55%;
+    }
   }
 
   &__desc {
     @extend .text;
 
-    line-height: $gutter * 4;
+    line-height: $gutter * 2;
+
+    @include media("xs") {
+      line-height: $gutter * 4;
+    }
   }
 }
 

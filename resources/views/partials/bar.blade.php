@@ -5,7 +5,7 @@ $desc= get_field('calltext', 'options');
 $number = get_field('callnumber', 'options');
 @endphp
 <section class="call">
-		<div class="container call__overlay">
+		<div class="container">
 				<figure class="call__bg">
 						{!! image($image, 'full', 'img') !!}
 				</figure>
@@ -14,7 +14,6 @@ $number = get_field('callnumber', 'options');
 					<h2 class="section-header--center call__desc">
 						<span class="section-header__headline call__title--margin"> {!! $desc !!}</span>
 						<span class="section-header__title"> {!! $number  !!}</span>
-						<a class="button button--buttonbg " href="">Dowiedz się więcej</a>
 					</h2>
 
 				</header>

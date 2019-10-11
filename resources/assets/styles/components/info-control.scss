@@ -1,6 +1,6 @@
 .slideControl {
   padding: 9px;
-  background-color: color(grey);
+  background-color: color(light);
   border-radius: 20px;
   border: 0;
   opacity: 0.6;
@@ -10,6 +10,6 @@
 
   &.-is-active {
     opacity: 1;
-    background-color: color(primary);
+    background-color: color(lightgrey);
   }
 }

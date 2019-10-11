@@ -57,7 +57,7 @@
 
     &--ele {
       margin: 0 ($gutter * 1);
-      transition: $transition * 5;
+      transition: $transition * 3;
 
       &:hover {
         color: color(special);
@@ -85,6 +85,50 @@
 
     @include media("sm") {
       width: 100%;
+    }
+  }
+
+  &__nav {
+    a {
+      @include cssLock("padding", 360, 1920, ($_gutter * 1, $_gutter * 2.5));
+
+      background-color: color(secondary);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: color(light);
+        color: color(secondary);
+      }
+    }
+
+    li {
+      @include cssLock(
+        "padding-top",
+        360,
+        1920,
+        ($_gutter * 1, $_gutter * 2.5)
+      );
+      @include cssLock(
+        "padding-bottom",
+        360,
+        1920,
+        ($_gutter * 1, $_gutter * 2.5)
+      );
+    }
+
+    &::before {
+      width: 0%;
+
+      @include media("sm") {
+        @include cssLock("height", 360, 1920, ($_gutter * 6, $_gutter * 8));
+
+        content: "";
+        position: absolute;
+        left: 100%;
+        width: 100%;
+        background-color: color(secondary);
+        z-index: 2;
+      }
     }
   }
 
@@ -146,7 +190,7 @@
     margin-bottom: ($gutter * 2);
 
     &--ele {
-      @include cssLock("font-size", 360, 1920, (15, 18));
+      @include cssLock("font-size", 360, 1920, (13, 18));
 
       @include media("sm") {
         @include cssLock("font-size", 360, 1920, (10, 18));
@@ -157,35 +201,6 @@
 
       &:hover {
         color: color(special);
-      }
-    }
-  }
-
-  &__nav {
-    li {
-      @include cssLock("padding", 360, 1920, ($_gutter * 1, $_gutter * 2.5));
-
-      background-color: color(secondary);
-      transition: all 0.3s ease;
-
-      &:hover {
-        background-color: color(light);
-        color: color(secondary);
-      }
-    }
-
-    &::before {
-      width: 0%;
-
-      @include media("sm") {
-        @include cssLock("height", 360, 1920, ($_gutter * 6, $_gutter * 8));
-
-        content: "";
-        position: absolute;
-        left: 100%;
-        width: 100%;
-        background-color: color(secondary);
-        z-index: 2;
       }
     }
   }

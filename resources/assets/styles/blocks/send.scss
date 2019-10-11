@@ -11,6 +11,7 @@
   }
 
   &__bg {
+    display: none;
     margin: 0;
     width: 65%;
     height: 82%;
@@ -19,12 +20,20 @@
     left: 0%;
     bottom: 0;
     opacity: 0.8;
+
+    @include media("md") {
+      display: block;
+    }
   }
 
   &__wrapper {
     display: flex;
     justify-content: flex-end;
-    margin-top: $gutter * 17;
+    margin-top: $gutter * 5;
+
+    @include media("md") {
+      margin-top: $gutter * 17;
+    }
   }
 
   &__box {

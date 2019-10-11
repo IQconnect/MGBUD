@@ -16,21 +16,21 @@
 .title {
   @extend %text;
 
-  @include cssLock("font-size", 360, 1920, (10, 45));
+  @include cssLock("font-size", 360, 1920, (25, 45));
   //font-weight: 800;
 }
 
 .subtitle {
   @extend %text;
 
-  @include cssLock("font-size", 360, 1920, (10, 18));
+  @include cssLock("font-size", 360, 1920, (15, 18));
   //font-weight: 600;
 }
 
 .text {
   @extend %text;
 
-  @include cssLock("font-size", 360, 1920, (8, 16));
+  @include cssLock("font-size", 360, 1920, (9, 16));
 }
 
 .large-text {

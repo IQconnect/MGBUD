@@ -1,0 +1,23 @@
+.two-img {
+  @extend .section;
+
+  padding-top: $gutter * 5;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__imagebox {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 45vh;
+
+    @include media("md") {
+      position: relative;
+      width: 48%;
+      display: flex;
+    }
+  }
+}

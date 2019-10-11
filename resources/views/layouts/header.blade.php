@@ -18,8 +18,8 @@
         </button>
       <div class="header__menu" data-nav >
         <div class="header__contact">
-          <p class="header__contact--ele"> TELEFON :  <a href="" alt="">{{ get_option_field('telhead') }}</a></p>
-          <p class="header__contact--ele"> EMAIL :  <a href="" alt="">{{ get_option_field('emailhead') }}</a></p>
+          <p class="header__contact--ele"> TELEFON : <a href="" alt="">{{ get_option_field('telhead') }}</a></p>
+          <p class="header__contact--ele"> EMAIL : <a href="" alt="">{{ get_option_field('emailhead') }}</a></p>
         </div>
         <nav class="header__nav"  >
               @if (has_nav_menu('primary_navigation'))

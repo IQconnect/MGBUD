@@ -1,10 +1,15 @@
 .realization {
-  @extend .section;
+  // @extend .section;
 
   padding-top: $gutter * 13;
 
   &__wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+
+    @include media("md") {
+      flex-direction: row;
+    }
   }
 }

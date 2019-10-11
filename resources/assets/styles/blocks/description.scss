@@ -1,0 +1,20 @@
+.description {
+  @extend .section;
+
+  padding-bottom: $gutter * 8;
+  padding-top: $gutter * 15;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__textbox {
+    @extend .text;
+
+    width: 100%;
+    text-align: center;
+    line-height: ($gutter * 4);
+    color: color(primary);
+  }
+}

@@ -9,23 +9,41 @@
     display: flex;
     z-index: 1;
     position: relative;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    @include media("md") {
+      flex-direction: row;
+      align-items: unset;
+    }
   }
 
   &__title {
     color: color(light);
     display: flex;
-    width: 40%;
+    width: 100%;
     align-items: center;
+    margin-bottom: $gutter * 7;
+
+    @include media("md") {
+      width: 40%;
+      margin-bottom: 0;
+    }
   }
 
   &__bg {
     margin: 0;
-    width: 80%;
+    width: 100%;
     height: 100%;
     position: absolute;
     z-index: 0;
-    left: 33%;
+    left: 0;
     top: 0;
     opacity: 0.5;
+
+    @include media("md") {
+      left: 33%;
+      width: 80%;
+    }
   }
 }

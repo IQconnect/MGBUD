@@ -1,6 +1,6 @@
 .text-img {
-  // @extend .section;
-  padding-bottom: $gutter * 8;
+  @extend .section;
+
   padding-top: $gutter * 15;
 
   &__wrapper {
@@ -14,11 +14,13 @@
     padding: 0;
     //height: 55vh;
 
-    @include media("lg") {
+    @include media("md") {
       position: relative;
       width: 40%;
       display: flex;
       flex-wrap: wrap;
+      margin-inline-start: 40px;
+      margin-inline-end: 40px;
     }
   }
 

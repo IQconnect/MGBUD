@@ -5,7 +5,6 @@
 <section class="offer">
 	<div class="container">
 		<div class="offer__wrapper">
-			@includeWhen($data['header'] == 'tak', 'partials.title', ['title' => $data['title'], 'subtitle' => $data['subtitle'], 'class'=>'section-header--addmargin section-header--center section-header--primary'])
 			<div class="offer__menu">
 				@foreach ( $oferta as $elem )
 				@php

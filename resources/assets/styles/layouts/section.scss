@@ -1,9 +1,9 @@
 .section {
-  padding-bottom: $gutter * 13;
+  padding-bottom: $gutter * 9;
   overflow: hidden;
 
-  @media (max-width: 998px) {
-    padding: $gutter * 8 0;
+  @include media("sm") {
+    padding-bottom: $gutter * 10;
   }
 
   &--full {

@@ -1,8 +1,13 @@
 .single-realization {
   display: flex;
-  width: 48%;
+  width: 100%;
   flex-direction: column;
   background-color: color(lightgrey);
+  margin-bottom: $gutter * 5;
+
+  @include media("md") {
+    width: 48%;
+  }
 
   &__img {
     position: relative;
@@ -12,7 +17,11 @@
   }
 
   &__textbox {
-    padding: ($gutter * 6) ($gutter * 6) ($gutter * 1) ($gutter * 6);
+    padding: $gutter * 3;
+
+    @include media("md") {
+      padding: ($gutter * 6) ($gutter * 6) ($gutter * 1) ($gutter * 6);
+    }
 
     &--primary {
       color: color(primary);

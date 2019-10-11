@@ -3,23 +3,28 @@
 
   padding: 0;
 
-  &__wrapper {
-    @include cssLock("grid-gap", 360, 1920, ($_gutter * 1, $_gutter * 2));
+  @include media("md") {
+    padding: 0;
+  }
 
+  &__wrapper {
+    @include cssLock("grid-gap", 360, 1920, ($_gutter * 1, $_gutter * 4));
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+    list-style-position: inside;
     padding: 0;
     margin: 0;
+    justify-content: center;
 
     @include media("md") {
       grid-template-columns: repeat(5, 1fr);
     }
 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    list-style-type: none;
-    list-style-position: inside;
-
     img {
-      @include cssLock("width", 360, 1920, ($_gutter * 4, $_gutter * 16));
+      @include cssLock("width", 360, 1920, ($_gutter * 4, $_gutter * 12));
+      @include cssLock("height", 360, 1920, ($_gutter * 3, $_gutter * 12));
 
       display: flex;
 

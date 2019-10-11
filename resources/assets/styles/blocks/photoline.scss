@@ -1,6 +1,4 @@
 .photoline {
-  margin-top: $gutter * 15;
-
   &__wrapper {
     display: flex;
   }
@@ -8,8 +6,12 @@
   &__box {
     display: flex;
     justify-content: space-between;
-    height: 45vh;
+    height: 25vh;
     width: 100%;
+
+    @include media("lg") {
+      height: 45vh;
+    }
   }
 
   &__img {

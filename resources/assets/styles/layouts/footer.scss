@@ -7,14 +7,24 @@
 
   &__info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-content: center;
     margin-bottom: ($gutter * 10);
+    text-align: center;
+
+    @include media("md") {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__column {
     display: flex;
     flex-direction: column;
+
+    @include media("md") {
+      flex-direction: column;
+    }
 
     &--title {
       @extend .large-text;
@@ -26,13 +36,19 @@
   }
 
   &__social {
+    @extend .social;
+
     list-style: none;
     color: color(light);
     display: flex;
-    font-size: ($gutter * 7);
     padding: 0;
-    margin: 0;
-    justify-content: space-around;
+    margin: 0 $gutter * 4;
+    justify-content: space-evenly;
+
+    @include media("md") {
+      justify-content: space-around;
+      margin: 0;
+    }
 
     &--el {
       transition: $transition * 5;
@@ -51,7 +67,7 @@
     color: color(light);
 
     &--subtitle {
-      @extend .subtitle;
+      @extend .text;
 
       margin-bottom: ($gutter * 2);
       font-weight: 600;
