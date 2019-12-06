@@ -1,21 +1,33 @@
+  @php
+       $title=get_option_field('footer_title');
+       $firm=get_option_field('footer_firm');
+       $address=get_option_field('footer_address');
+       $postcode=get_option_field('footer_postcode');
+       $address=get_option_field('footer_address');
+       $postcode=get_option_field('footer_postcode');
+       $link=get_option_field('footer_link');
+       $telephone=get_option_field('telhead');
+       $email=get_option_field('emailhead');
+  @endphp
+
   <footer class="footer">
     <div class="container">
         <div class="footer__info">
           <div class="footer__column">
             <h4 class="footer__column--title">
-            O nas
+            {{ $title }}
             </h4>
             <ul class="footer__list">
-              <li class="footer__list--subtitle">MGBUD SP Z O.O.</li>
-              <li class="footer__list--ele">Ul. Ks. J. Popiełuszki 26/28</br>
-              10-693 Olsztyn</br>
-              <a class="footer__list--anchor" href="">www.mgbud.pl</a>
+              <li class="footer__list--subtitle">{{ $firm }}</li>
+              <li class="footer__list--ele">{{ $address }}</br>
+                {{ $postcode }}</br>
+              <a class="footer__list--anchor" href="">{{ $link }}</a>
               </li>
               <li class="footer__list--ele">Email</br>
-              biuro@mgbud.pl
+                {{ $email }}
               </li>
               <li class="footer__list--ele">Telefon</br>
-              +48 694 428 741
+                {{ $telephone }}
               </li>
             </ul>
           </div>

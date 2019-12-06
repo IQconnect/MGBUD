@@ -1,0 +1,14 @@
+.gallery {
+  margin-top: $gutter * 10;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: $gutter * 1.5;
+
+    a {
+      position: relative;
+      padding-top: 60%;
+    }
+  }
+}

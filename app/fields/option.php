@@ -31,17 +31,10 @@ $option_page
         ->addImage('callimage', ['label' => 'Zdjecie'])
     ->addTab('footer', ['label' => 'Stopka', 'placement' => 'left'])
         ->addText('footer_title', ['label' => 'Nagłówek kolumny'])
+        ->addText('footer_firm', ['label' => 'Firma'])
         ->addText('footer_address', ['label' => 'Adres'] )
         ->addText('footer_postcode', ['label' => 'Kod pocztowy i miasto'] )
-        ->addText('footer_krs', ['label' => 'KRS'] )
-        ->addText('footer_nip', ['label' => 'NIP'] )
-        ->addText('footer_regon', ['label' => 'REGON'] )
-        ->addRepeater('footer_mails', ['label' => 'Maile', 'min' => 0, 'layout' => 'table'])
-            ->addText('mail', ['title' => 'Mail'])
-        ->endRepeater()
-        ->addRepeater('footer_tel', ['label' => 'Tel', 'min' => 0, 'layout' => 'table'])
-            ->addText('tel', ['title' => 'Tel'])
-        ->endRepeater()
+        ->addText('footer_link',['label'=>'Adress strony'])
         ->addImage('IQlogo');
 
 return $option_page;

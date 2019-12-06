@@ -20,6 +20,7 @@ $builder
          ->addLayout(get_field_partial('partials.photoline'))
          ->addLayout(get_field_partial('partials.send'))
          ->addLayout(get_field_partial('partials.description'))
-         ->addLayout(get_field_partial('partials.two-img'));
+         ->addLayout(get_field_partial('partials.two-img'))
+         ->addLayout(get_field_partial('partials.gallery'));
 
 return $builder;
